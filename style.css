@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
-  --primary-color: #0000ff;
-  --secondary-color: #d8f3b4;
+  --primary-color: #f3ffff;
+  --secondary-color: #d8bdfa;
+  --higlight-color: #ec2520;
   font-family: "Inter", sans-serif;
 }
 
@@ -54,25 +55,50 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: black;
+  background-color: #2e2bb0;
+  padding: 10px 20px;
+  z-index: 1000;
+
 }
 
 /*MAIN*/
 
+main{
+  margin-top: 75px;
+}
+
 .content {
   position: relative;
+  padding: 20px;
 }
 
 .sidebar {
   position: relative;
+  width: 200px;
+  padding: 20px;
+  float: right;
+}
+
+.features{
+  padding: 20px;
+}
+
+.feature {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-  border: 2px solid red;
   position: sticky;
   text-align: center;
+  background-color: #2e2bb0;
+  color: white;
 }
 
 .footer-social {
   list-style-type: none;
+  padding: 0;
 }
