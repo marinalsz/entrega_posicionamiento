@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 :root {
-  --primary-color: #f3ffff;
-  --secondary-color: #d8bdfa;
-  --higlight-color: #ec2520;
+  --background: #0c0947;
+  --color: #d2f361;
+  --button-background: #ffffff;
+  --button-color: #000000;
+  --secondary: #0000ff;
   font-family: "Inter", sans-serif;
 }
 
@@ -17,12 +19,12 @@
 
 body {
   min-height: 100vh;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
+  background-color: var(--background);
+  color: var(--color);
 }
 
 a {
-  color: var(--primary-color);
+  color: var(--color);
   text-decoration: none;
 }
 
@@ -30,21 +32,27 @@ a:hover {
   text-decoration: underline;
 }
 
-h2 {
+h2, h3 {
   text-align: center;
   letter-spacing: 1px;
 }
 
+p{
+  text-align: center;
+}
+
 li {
   list-style: none;
+  text-align: center;
 }
 
 button {
-  background-color: #04aa6d;
-  color: white;
+  background-color: var(--button-background);
+  color: var(--button-color);
   border: none;
   padding: 10px 20px;
   text-align: center;
+  border-radius: 6px;
 }
 
 /*HEADER*/
@@ -55,47 +63,42 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #2e2bb0;
   padding: 10px 20px;
   z-index: 1000;
-
+  background-color: var(--secondary);
 }
 
 /*MAIN*/
 
-main{
-  margin-top: 75px;
+main {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
 }
 
 .content {
-  position: relative;
   padding: 20px;
 }
 
 .sidebar {
-  position: relative;
+  float: right;
   width: 200px;
   padding: 20px;
-  float: right;
 }
 
-.features{
+.features {
   padding: 20px;
 }
 
 .feature {
-  background-color: white;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
   position: sticky;
-  text-align: center;
-  background-color: #2e2bb0;
-  color: white;
+  background-color: var(--secondary);
 }
 
 .footer-social {
