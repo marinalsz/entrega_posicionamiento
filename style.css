@@ -59,6 +59,11 @@ button {
   border-radius: 6px;
 }
 
+button:hover {
+  background-color: #555555;
+  color: white;
+}
+
 /*HEADER*/
 
 header {
@@ -119,6 +124,7 @@ section {
 footer {
   position: sticky;
   bottom: 0;
+   margin-top: var(--spacing);
   background-color: var(--secondary);
   text-align: center;
   padding: var(--spacing);
