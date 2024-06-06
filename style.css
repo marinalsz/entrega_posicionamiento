@@ -42,6 +42,10 @@ h3 {
   color: var(--button-background);
 }
 
+h3{
+text-align: center;
+}
+
 li {
   list-style-type: none;
 }
@@ -71,7 +75,8 @@ header {
 /*MAIN*/
 
 main {
-  margin-top: 100px;
+  position: relative;
+  top: 60px;
   width: 100%;
   height: auto;
 }
@@ -84,7 +89,6 @@ main {
   float: right;
   margin-right: var(--spacing);
   border: 2px dashed yellow;
-  background-color: var(--tertiary);
 }
 
 section {
@@ -97,19 +101,18 @@ section {
 
 .features {
   border: 2px solid red;
-  position: relative;
-  top: 300px;
+  margin-top: 400px;
 }
 
 .feature {
-  background-color: var(--tertiary);
-  margin-bottom: 60px;
+  border: 2px dashed coral;
 }
 
 /* FOOTER */
 
 footer {
   position: sticky;
+  bottom: 0;
   background-color: var(--secondary);
   text-align: center;
   padding: var(--spacing);
