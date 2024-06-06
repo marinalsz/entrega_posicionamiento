@@ -6,7 +6,8 @@
   --button-background: #ffffff;
   --button-color: #000000;
   --secondary: #0000ff;
-  font-family: "Inter", sans-serif;
+  --tertiary: #1e90ff;
+  --spacing: 20px;
 }
 
 /*ESTILOS GENERALES*/
@@ -15,6 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -30,20 +32,18 @@ a {
 
 a:hover {
   text-decoration: underline;
+  font-weight: 600;
+  transition: 0.2s;
 }
 
-h2, h3 {
-  text-align: center;
+h2,
+h3 {
   letter-spacing: 1px;
-}
-
-p{
-  text-align: center;
+  color: var(--button-background);
 }
 
 li {
-  list-style: none;
-  text-align: center;
+  list-style-type: none;
 }
 
 button {
@@ -76,32 +76,41 @@ main {
   height: auto;
 }
 
-.content {
-  padding: 20px;
-}
+/* SECTIONS */
 
 .sidebar {
-  float: right;
   width: 200px;
-  padding: 20px;
+  padding: var(--spacing);
+  float: right;
+  margin-right: var(--spacing);
+  border: 2px dashed yellow;
+  background-color: var(--tertiary);
+}
+
+section {
+  padding: var(--spacing);
+}
+
+.content {
+  margin-bottom: var(--spacing);
 }
 
 .features {
-  padding: 20px;
+  border: 2px solid red;
+  position: relative;
+  top: 300px;
 }
 
 .feature {
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  background-color: var(--tertiary);
+  margin-bottom: 60px;
 }
+
+/* FOOTER */
 
 footer {
   position: sticky;
   background-color: var(--secondary);
-}
-
-.footer-social {
-  list-style-type: none;
-  padding: 0;
+  text-align: center;
+  padding: var(--spacing);
 }
