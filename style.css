@@ -6,7 +6,6 @@
   --button-background: #ffffff;
   --button-color: #000000;
   --secondary: #0000ff;
-  --tertiary: #1e90ff;
   --spacing: 20px;
 }
 
@@ -105,14 +104,14 @@ section {
 }
 
 .features {
-  border: 2px solid red;
   text-align: center;
   margin-top: 400px;
 }
 
 .feature {
-  border: 2px dashed coral;
   margin: var(--spacing);
+  padding: 40px;
+  border: 2px dashed yellow;
 }
 
 .feature p {
