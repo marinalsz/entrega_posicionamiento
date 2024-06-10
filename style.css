@@ -25,7 +25,7 @@ body {
 }
 
 a {
-  color: var(--color);
+  color: var(--button-background);
   text-decoration: none;
 }
 
@@ -69,9 +69,9 @@ header {
   position: fixed;
   height: auto;
   width: 100%;
+  padding: 10px;
   top: 0;
   left: 0;
-  padding: 10px 20px;
   z-index: 1000;
   background-color: var(--secondary);
 }
@@ -127,9 +127,6 @@ footer {
   background-color: var(--secondary);
   color: var(--color);
   text-align: center;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
-.footer-social {
-  border: 2px solid red;
-}
